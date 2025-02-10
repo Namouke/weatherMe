@@ -1,7 +1,9 @@
+@import "variables";
+
 body {
-    background-color: #252323;
+    background-color: $theme-color;
 }
 
 p {
-    margin: 0;
+    margin: $primary-color;
 }
