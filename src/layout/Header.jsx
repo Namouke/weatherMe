@@ -1,9 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../assets/logo/logoWeatherMe_transparent.png"
+import "../styles/layout/header.scss"
 
 const Header = () => {
     return (
-        <nav>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <nav className="header">
+            <Link to="/">
+                <img className="header__logo" src={logo} alt="Logo WeatherMe" />
+            </Link>
+            <p className="header__clock">🕒10:30</p>
         </nav>
     )
 }
