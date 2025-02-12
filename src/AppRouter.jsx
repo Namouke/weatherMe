@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AboutPage from "./pages/About";
-import ErrorPage from "./pages/About";
-import HomePage from "./pages/About";
-import MonthyPage from "./pages/About";
-import TommorowPage from "./pages/About";
+import ErrorPage from "./pages/Error";
+import HomePage from "./pages/Home";
+import MonthyPage from "./pages/Monthy";
+import TommorowPage from "./pages/Tommorow";
+import Layout from "./layout/Layout";
 
 const AppRouter = () => {
     return (
