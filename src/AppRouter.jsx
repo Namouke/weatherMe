@@ -12,8 +12,8 @@ const AppRouter = () => {
             <Layout>
                 <Routes>
                     <Route path="/" element={HomePage}></Route>
-                    <Route path="" element={TommorowPage}></Route>
-                    <Route path="" element={MonthyPage}></Route>
+                    <Route path="/Tommorow" element={TommorowPage}></Route>
+                    <Route path="/Monthy" element={MonthyPage}></Route>
                     <Route path="/about" element={AboutPage}></Route>
                     <Route path="*" element={ErrorPage}></Route>
                 </Routes>
