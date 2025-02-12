@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 // import { useState, useEffect } from "react";
 import logo from "../assets/logo/logoWeatherMe_transparent.png"
 import Clock from "../components/clock/Clock";
+import HeaderNav from "../components/layout/header/HeaderNav"
 import "../styles/layout/header.scss"
 
 const Header = () => {
@@ -15,11 +16,7 @@ const Header = () => {
                     <Clock />
                 </div>
             </Link>
-            <div className="header__nav">
-                <Link to="/"><div>Today </div></Link>
-                <Link to="/Tommoraw"><div>Tommorow</div></Link>
-                <Link to="Monthy"><div>Monthly Forecast</div></Link>
-            </div>
+            <HeaderNav />
         </nav>
     )
 }

@@ -1,7 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-const Clock = () => {
+const Clock = (props) => {
+    const { className = "" } = props;
+
     const [time, setTime] = useState("");
 
     useEffect(() => {
@@ -16,7 +18,9 @@ const Clock = () => {
         const interval = setInterval(updateTime, 1000);
         return () => clearInterval(interval);
     }, [])
-    return <p className="clock">{time}</p>
+
+    return <p className={`clock ${className}`}>{time}</p>
+
 }
 
 export default Clock;
