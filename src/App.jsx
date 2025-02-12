@@ -1,12 +1,10 @@
 import React from "react";
+import AppRouter from "./AppRouter";
 
 
 function App() {
   return (
-    <div>
-      <h1>Bienvenue sur WeatherMe</h1>
-      <p>Votre application météo en React.</p>
-    </div>
+    <AppRouter />
   );
 }
 
