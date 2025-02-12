@@ -15,7 +15,11 @@ const Header = () => {
             const frenchTime = new Intl.DateTimeFormat("fr-FR", options).format(now);
             setTime(frenchTime);
         };
-        const interval = setInterval(updateTime, 1000);
+
+        
+
+        const minute = 60 * 1000;
+        const interval = setInterval(updateTime, minute);
         return () => clearInterval(interval);
     }, []);
 
