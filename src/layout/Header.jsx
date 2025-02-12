@@ -1,34 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import logo from "../assets/logo/logoWeatherMe_transparent.png"
+import Clock from "../components/clock/Clock";
 import "../styles/layout/header.scss"
 
 const Header = () => {
-
-    const [time, setTime] = useState("");
-
-    useEffect(() => {
-        const updateTime = () => {
-            const now = new Date();
-            const options = { hour: "2-digit", minute: "2-digit" };
-            const frenchTime = new Intl.DateTimeFormat("fr-FR", options).format(now);
-            setTime(frenchTime);
-        };
-
-        
-
-        const minute = 60 * 1000;
-        const interval = setInterval(updateTime, minute);
-        return () => clearInterval(interval);
-    }, []);
 
     return (
         <nav className="header">
             <Link to="/">
                 <div className="header__logo">
                     <img className="header__logo__img" src={logo} alt="Logo WeatherMe" />
-                    <p className="header__logo__clock">🕒{time}</p>
+                    <Clock />
                 </div>
             </Link>
             <div className="header__nav">
