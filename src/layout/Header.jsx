@@ -7,9 +7,16 @@ const Header = () => {
     return (
         <nav className="header">
             <Link to="/">
-                <img className="header__logo" src={logo} alt="Logo WeatherMe" />
+                <div className="header__logo">
+                    <img className="header__logo__img" src={logo} alt="Logo WeatherMe" />
+                    <p className="header__logo__clock">🕒10:30</p>
+                </div>
             </Link>
-            <p className="header__clock">🕒10:30</p>
+            <div className="header__nav">
+                <Link to="/"><div>Today </div></Link>
+                <Link to="/Tommoraw"><div>Tommorow</div></Link>
+                <Link to="Monthy"><div>Monthly Forecast</div></Link>
+            </div>
         </nav>
     )
 }
