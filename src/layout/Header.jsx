@@ -11,7 +11,7 @@ const Header = () => {
     useEffect(() => {
         const updateTime = () => {
             const now = new Date();
-            const options = { hour: "2-digit", minute: "2-digit", second: "2-digit" };
+            const options = { hour: "2-digit", minute: "2-digit" };
             const frenchTime = new Intl.DateTimeFormat("fr-FR", options).format(now);
             setTime(frenchTime);
         };
