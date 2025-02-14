@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 // import { useState, useEffect } from "react";
-import logo from "../assets/logo/logoWeatherMe_transparent.png"
+import logo from "../assets/logo/logo_soleil_nuage.png"
 import Clock from "../components/clock/Clock";
 import HeaderNav from "../components/layout/header/HeaderNav"
 import "../styles/layout/header.scss"
