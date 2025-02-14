@@ -2,13 +2,26 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 117px;
 
     &__logo {
+        display: flex;
         flex-direction: column;
+
+        &__img {
+            position: absolute;
+            width: 80px;
+        }
 
         &__text {
             font-size: 69px;
             font-weight: bold;
+            margin: 40px 0 0 65px;
+        }
+
+        &__clock {
+            display: flex;
+            justify-content: end;
         }
     }
 }
