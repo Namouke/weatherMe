@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import styles from "./Clock.module.css"
 
 const Clock = (props) => {
     const { className = "" } = props;
@@ -19,7 +20,7 @@ const Clock = (props) => {
         return () => clearInterval(interval);
     }, [])
 
-    return <p className={`clock ${className}`}>Time: {time}</p>
+    return <p className={`clock ${styles.clock}`}>Time: {time}</p>
 
 }
 
