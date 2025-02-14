@@ -19,7 +19,7 @@ const Clock = (props) => {
         return () => clearInterval(interval);
     }, [])
 
-    return <p className={`clock ${className}`}>{time}</p>
+    return <p className={`clock ${className}`}>Time: {time}</p>
 
 }
 
