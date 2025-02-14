@@ -13,6 +13,7 @@ const Header = () => {
             <Link to="/">
                 <div className="header__logo">
                     <img className="header__logo__img" src={logo} alt="Logo WeatherMe" />
+                    <p className="header__logo__text">WeatherMe</p>
                     <Clock />
                 </div>
             </Link>

@@ -2,4 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    &__logo {
+        flex-direction: column;
+
+        &__text {
+            font-size: 69px;
+            font-weight: bold;
+        }
+    }
 }
