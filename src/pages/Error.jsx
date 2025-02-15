@@ -3,7 +3,7 @@ import React from "react";
 const Error = () => {
     return (
         <section>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Error</p>
         </section>
     )
 }

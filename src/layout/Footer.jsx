@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <footer className="footer">
+            <p className="footer__rights">© 2020 WeatherMe. All rights reserved</p>
+            <Link to="/about"><p className="footer__linkAbout">A propos de nous</p></Link>
         </footer>
     )
 }
