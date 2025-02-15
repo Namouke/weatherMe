@@ -1,10 +1,12 @@
 @use "variables" as *;
 
+html,
 body {
     background-color: $theme-color;
     font-family: $police-site;
     padding: 20px;
     margin: 0px;
+    height: 100%;
 }
 
 p {
