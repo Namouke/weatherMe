@@ -5,8 +5,8 @@ import PingLocation from "../../../../assets/Carousels/Location/🦆 icon _locat
 const LocationCarousel = () => {
     return (
         <div className={styles.location}>
-            <p>Paris</p>
-            <img src={PingLocation} alt="Logo location" />
+            <p className={styles.location__text}>Paris</p>
+            <img src={PingLocation} className={styles.location__ping} alt="Logo location" />
         </div>
     )
 }

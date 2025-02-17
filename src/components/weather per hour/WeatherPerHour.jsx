@@ -4,8 +4,8 @@ import styles from "./WeatherPerHour.module.scss";
 const WeatherPerHour = () => {
     return (
         <div className={styles.WeatherPerHour}>
-            <p></p>
-            <p></p>
+            <p>xx:xxam/pm</p>
+            <p>XX°</p>
         </div>
     )
 }
