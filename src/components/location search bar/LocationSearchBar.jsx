@@ -5,9 +5,9 @@ import locationLogo from "../../assets/location Search Bar/🦆 icon _search_.pn
 const Location = () => {
 
     return (
-        <div className="location">
-            <img src={locationLogo} className="location__logo" alt="Icon de Recherche de localisation" />
-            <p className="location__bar"></p>
+        <div className={styles.location}>
+            <img src={locationLogo} className={styles.location__logo} alt="Icon de Recherche de localisation" />
+            <p className={styles.location__bar}>Search location...</p>
         </div>
     )
 };
